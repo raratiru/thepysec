@@ -13,3 +13,9 @@ John
 ----
 
 John is the Battler. He will serve the necessary files needed to run thepysec.
+
+
+Lia
+---
+
+Lia is here to take a detailed look at your strings.
