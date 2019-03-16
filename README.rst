@@ -7,7 +7,7 @@
    :alt: Coverage Status
    :target: https://coveralls.io/github/raratiru/thepysec?branch=master
 
-A collection of tools that support a busy project.
+A collection of tools that support a busy project based on Python >= 3.6.
 
 John
 ----
