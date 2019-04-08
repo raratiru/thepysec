@@ -8,7 +8,7 @@
 #
 #       Creation Date : Fri 28 Dec 2018 03:17:42 PM EET
 #
-#       Last Modified : Sat 16 Mar 2019 04:09:14 PM EET (16:09)
+#       Last Modified : Mon 08 Apr 2019 06:54:32 PM EEST (18:54)
 #
 # ==============================================================================
 
@@ -29,7 +29,7 @@ setup(
     python_requires='>=3.6',
     description='Python secretaries you call at will, for instant py-relief.',
     long_description=read('README.rst'),
-    url='https://github.com/raratiru/thepyspec',
+    url='https://github.com/raratiru/thepysec',
     author='Raratiru',
     author_email='welcome@rara.gr',
     license='gpl-3.0',
