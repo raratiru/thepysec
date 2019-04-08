@@ -29,7 +29,7 @@ setup(
     python_requires='>=3.6',
     description='Python secretaries you call at will, for instant py-relief.',
     long_description=read('README.rst'),
-    url='https://github.com/raratiru/thepyspec',
+    url='https://github.com/raratiru/thepysec',
     author='Raratiru',
     author_email='welcome@rara.gr',
     license='gpl-3.0',
