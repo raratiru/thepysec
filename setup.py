@@ -8,14 +8,14 @@
 #
 #       Creation Date : Fri 28 Dec 2018 03:17:42 PM EET
 #
-#       Last Modified : Mon 08 Apr 2019 06:54:32 PM EEST (18:54)
+#       Last Modified : Fri 31 May 2019 10:13:48 PM EEST (22:13)
 #
 # ==============================================================================
 
 from os import path
 from setuptools import setup, find_packages
 
-version = __import__('thepysec').get_version()
+version = __import__("thepysec").get_version()
 
 
 def read(fname):
@@ -24,29 +24,28 @@ def read(fname):
 
 
 setup(
-    name='thepysec',
+    name="thepysec",
     version=version,
-    python_requires='>=3.6',
-    description='Python secretaries you call at will, for instant py-relief.',
-    long_description=read('README.rst'),
-    url='https://github.com/raratiru/thepysec',
-    author='Raratiru',
-    author_email='welcome@rara.gr',
-    license='gpl-3.0',
-    packages=find_packages(exclude=('tests', 'docs')),
-    setup_requires=['pytest-runner'],
-    tests_require=['pytest', 'pytest-cov'],
-    extras_require={
-        'dev': ['pytest', 'pytest-cov', 'ipdb'],
-    },
+    python_requires=">=3.6",
+    description="Python secretaries you call at will, for instant py-relief.",
+    long_description=read("README.rst"),
+    url="https://github.com/raratiru/thepysec",
+    author="Raratiru",
+    author_email="welcome@rara.gr",
+    license="gpl-3.0",
+    packages=find_packages(exclude=("tests", "docs")),
+    setup_requires=["pytest-runner"],
+    tests_require=["pytest", "pytest-cov"],
+    extras_require={"dev": ["pytest", "pytest-cov", "ipdb"]},
+    install_requires=["unidecode"],
     classifiers=[
-        'Development Status :: 1 - Planning',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
-        'Operating System :: OS Independent',
-        'Natural Language :: English',
-        'Topic :: Software Development :: Libraries :: Python Modules',
+        "Development Status :: 1 - Planning",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: OS Independent",
+        "Natural Language :: English",
+        "Topic :: Software Development :: Libraries :: Python Modules",
     ],
 )

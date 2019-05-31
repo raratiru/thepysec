@@ -19,3 +19,7 @@ Lia
 ---
 
 Lia is here to take a detailed look at your strings.
+
+* `strings.pop_wsp`: Remove extra whitespace.
+* `strings.pop_i18n_wsp`: Remove extra whitespace from each field of django-translated-fields
+* `strings.pre_slug`: Prepare a string to become a wise slug. 'r3!b' -> 'r 3 b'
