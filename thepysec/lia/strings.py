@@ -8,18 +8,17 @@
 #
 #       Creation Date : Sat 16 Mar 2019 03:12:18 PM EET (15:12)
 #
-#       Last Modified : Sat 01 Jun 2019 01:13:41 PM EEST (13:13)
+#       Last Modified : Sat 01 Jun 2019 01:51:28 PM EEST (13:51)
 #
 # ==============================================================================
 
 import re
-import string
-from itertools import product, repeat
+from itertools import product
 from unidecode import unidecode
 
 
-def pop_wsp(string):
-    return " ".join(string.split())
+def pop_wsp(lia_string):
+    return " ".join(lia_string.split())
 
 
 def pop_i18n_wsp(instance, translated_fields, available_languages):
