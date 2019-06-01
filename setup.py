@@ -8,7 +8,7 @@
 #
 #       Creation Date : Fri 28 Dec 2018 03:17:42 PM EET
 #
-#       Last Modified : Fri 31 May 2019 10:13:48 PM EEST (22:13)
+#       Last Modified : Sat 01 Jun 2019 01:29:06 PM EEST (13:29)
 #
 # ==============================================================================
 
@@ -28,7 +28,7 @@ setup(
     version=version,
     python_requires=">=3.6",
     description="Python secretaries you call at will, for instant py-relief.",
-    long_description=read("README.rst"),
+    long_description=read("README.md"),
     url="https://github.com/raratiru/thepysec",
     author="Raratiru",
     author_email="welcome@rara.gr",

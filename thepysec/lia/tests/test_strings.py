@@ -8,7 +8,7 @@
 #
 #       Creation Date : Sat 16 Mar 2019 03:19:11 PM EET (15:19)
 #
-#       Last Modified : Fri 31 May 2019 10:22:59 PM EEST (22:22)
+#       Last Modified : Sat 01 Jun 2019 01:12:24 PM EEST (13:12)
 #
 # ==============================================================================
 
@@ -44,6 +44,12 @@ def test_django_pop_whitespace():
         )
     )
 
+
 def test_pre_slug():
-    raw_slug = 'eR4e, $t&2, k&d'
-    assert strings.pre_slug(raw_slug) == 'er 4 e t 2 k d'
+    raw_slug = 'tr4e, 5435 (bili#go)'
+    assert strings.pre_slug(raw_slug) == 'tr 4 e 5435 biligo'
+
+
+def test_fast_pre_slug():
+    raw_slug = 'tr4e, 5435 (bili#go)'
+    assert strings.fast_pre_slug(raw_slug) == 'tr 4 e 5 4 3 5 bili go'
