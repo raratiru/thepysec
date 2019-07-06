@@ -109,14 +109,46 @@ def pre_slug(s):
     pros: Keeps numbers together adding space only between numbers and letters.
     cons: Almost double the time of fast_pre_slug, no space between punctuation and letters.
     """
+    punctuation = {
+        "!": " ",
+        '"': " ",
+        "#": " ",
+        "$": " ",
+        "%": " ",
+        "&": " ",
+        "'": " ",
+        "(": " ",
+        ")": " ",
+        "*": " ",
+        "+": " ",
+        ",": " ",
+        "-": " ",
+        ".": " ",
+        "/": " ",
+        ":": " ",
+        ";": " ",
+        "<": " ",
+        "=": " ",
+        ">": " ",
+        "?": " ",
+        "@": " ",
+        "[": " ",
+        "\\": " ",
+        "]": " ",
+        "^": " ",
+        "_": " ",
+        "`": " ",
+        "{": " ",
+        "|": " ",
+        "}": " ",
+        "~": " ",
+    }    
     return " ".join(
         re.sub(
             r"([0-9]+(\.[0-9]+)?)",
             r" \1 ",
             unidecode(
-                s.translate(
-                    str.maketrans(" ", "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
-                ).lower()
+                s.translate(str.maketrans(punctuation)).lower()
             ),
         ).split()
     )
