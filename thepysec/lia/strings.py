@@ -115,7 +115,7 @@ def pre_slug(s):
             r" \1 ",
             unidecode(
                 s.translate(
-                    str.maketrans(" ", "", "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
+                    str.maketrans(" ", "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
                 ).lower()
             ),
         ).split()
