@@ -47,7 +47,7 @@ def test_django_pop_whitespace():
 
 def test_pre_slug():
     raw_slug = 'tr4e, 5435 (bili#go)'
-    assert strings.pre_slug(raw_slug) == 'tr 4 e 5435 biligo'
+    assert strings.pre_slug(raw_slug) == 'tr 4 e 5435 bili go'
 
 
 def test_fast_pre_slug():
