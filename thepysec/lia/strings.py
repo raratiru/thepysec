@@ -38,7 +38,7 @@ def fast_pre_slug(lia_string):
     """
     * Decode string to ASCII
     * Lower case for all letters
-    * Replace punctuation with space
+    * Replace punctuation with space (punctuation in a valid input, has semantic meaning)
     * Add space around numbers
     * Remove extra spaces
     8μs from: 'tr4e, 5435 (bili#go)' to 'tr 4 e 5 4 3 5 bili go'
@@ -102,7 +102,7 @@ def pre_slug(s):
     """
     * Decode string to ASCII
     * Lower case for all letters
-    * Remove punctuation
+    * Replace punctuation with a space (punctuation in a valid input, has semantic meaning)
     * Add space between numbers and letters
     * Remove extra spaces
     13.5μs from: 'tr4e, 5435 (bili#go)' to 'tr 4 e 5435 biligo'
@@ -115,7 +115,7 @@ def pre_slug(s):
             r" \1 ",
             unidecode(
                 s.translate(
-                    str.maketrans("", "", "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
+                    str.maketrans(" ", "", "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
                 ).lower()
             ),
         ).split()
