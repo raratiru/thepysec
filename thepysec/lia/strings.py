@@ -38,7 +38,7 @@ def fast_pre_slug(lia_string):
     """
     * Decode string to ASCII
     * Lower case for all letters
-    * Replace punctuation with space
+    * Replace punctuation with space (punctuation in a valid input, has semantic meaning)
     * Add space around numbers
     * Remove extra spaces
     8μs from: 'tr4e, 5435 (bili#go)' to 'tr 4 e 5 4 3 5 bili go'
@@ -102,21 +102,53 @@ def pre_slug(s):
     """
     * Decode string to ASCII
     * Lower case for all letters
-    * Remove punctuation
+    * Replace punctuation with a space (punctuation in a valid input, has semantic meaning)
     * Add space between numbers and letters
     * Remove extra spaces
     13.5μs from: 'tr4e, 5435 (bili#go)' to 'tr 4 e 5435 biligo'
     pros: Keeps numbers together adding space only between numbers and letters.
     cons: Almost double the time of fast_pre_slug, no space between punctuation and letters.
     """
+    punctuation = {
+        "!": " ",
+        '"': " ",
+        "#": " ",
+        "$": " ",
+        "%": " ",
+        "&": " ",
+        "'": " ",
+        "(": " ",
+        ")": " ",
+        "*": " ",
+        "+": " ",
+        ",": " ",
+        "-": " ",
+        ".": " ",
+        "/": " ",
+        ":": " ",
+        ";": " ",
+        "<": " ",
+        "=": " ",
+        ">": " ",
+        "?": " ",
+        "@": " ",
+        "[": " ",
+        "\\": " ",
+        "]": " ",
+        "^": " ",
+        "_": " ",
+        "`": " ",
+        "{": " ",
+        "|": " ",
+        "}": " ",
+        "~": " ",
+    }    
     return " ".join(
         re.sub(
             r"([0-9]+(\.[0-9]+)?)",
             r" \1 ",
             unidecode(
-                s.translate(
-                    str.maketrans("", "", "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
-                ).lower()
+                s.translate(str.maketrans(punctuation)).lower()
             ),
         ).split()
     )
