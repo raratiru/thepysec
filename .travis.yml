@@ -3,10 +3,12 @@ language: python
 python:
 - '3.6'
 - '3.7'
+- '3.8'
 install:
 - pip install -e .
 - pip install pytest-cov
 - pip install coveralls
+- pip install psycopg2-binary
 script:
 - pytest
 after_success:
