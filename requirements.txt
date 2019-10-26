@@ -1,0 +1,6 @@
+unidecode
+pytest
+pytest-cov
+ipdb
+pdbpp
+black
