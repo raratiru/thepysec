@@ -18,3 +18,10 @@ Lia is here to take a detailed look at your strings.
 * `strings.pop_i18n_wsp`: Remove extra whitespace from each field of django-translated-fields
 * `strings.pre_slug`: Prepare a string to become a wise slug. 'r33a!bc' -> 'r 33 abc'
 * `strings.fast_pre_slug`: Prepare a string to become a fast slug. 'r33a!bc' -> 'r 3 3 a bc'
+
+Myriam
+------
+
+Myriam a mathematical kind of jelly roll.
+
+* `validate_overlap`: Recieves a list of DateRange or DateTimeRange and examines if contents overlap
