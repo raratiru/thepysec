@@ -24,4 +24,4 @@ Myriam
 
 Myriam a mathematical kind of jelly roll.
 
-* `validate_overlap`: Recieves a list of DateRange or DateTimeRange and examines if contents overlap
+* `validate_overlap`: Receives a list of DateRange or DateTimeRange and examines if contents overlap

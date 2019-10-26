@@ -8,7 +8,7 @@
 #
 #       Creation Date : Fri 28 Dec 2018 03:17:42 PM EET
 #
-#       Last Modified : Sat 26 Oct 2019 09:27:22 PM EEST (21:27)
+#       Last Modified : Sat 26 Oct 2019 09:47:24 PM EEST (21:47)
 #
 # ==============================================================================
 
@@ -35,7 +35,7 @@ setup(
     license="gpl-3.0",
     packages=find_packages(exclude=("tests", "docs")),
     setup_requires=["pytest-runner"],
-    tests_require=["pytest", "pytest-cov"],
+    tests_require=["pytest", "pytest-cov", "psycopg2-binary"],
     extras_require={"dev": ["pytest", "pytest-cov", "ipdb", "psycopg2-binary"]},
     install_requires=["unidecode"],
     classifiers=[
@@ -43,6 +43,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
         "Natural Language :: English",
