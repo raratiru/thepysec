@@ -12,6 +12,7 @@
 #
 # ==============================================================================
 
+
 def validate_overlap(periods, datetime_range=False):
     """
     Receives a list with DateRange or DateTimeRange and returns True

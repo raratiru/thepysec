@@ -142,13 +142,11 @@ def pre_slug(s):
         "|": " ",
         "}": " ",
         "~": " ",
-    }    
+    }
     return " ".join(
         re.sub(
             r"([0-9]+(\.[0-9]+)?)",
             r" \1 ",
-            unidecode(
-                s.translate(str.maketrans(punctuation)).lower()
-            ),
+            unidecode(s.translate(str.maketrans(punctuation)).lower()),
         ).split()
     )
