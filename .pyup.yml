@@ -1,0 +1,5 @@
+schedule: "every week"
+requirements:
+  - requirements.txt:
+      update: all
+      pin: True
