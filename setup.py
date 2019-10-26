@@ -8,7 +8,7 @@
 #
 #       Creation Date : Fri 28 Dec 2018 03:17:42 PM EET
 #
-#       Last Modified : Sat 01 Jun 2019 01:29:06 PM EEST (13:29)
+#       Last Modified : Sat 26 Oct 2019 09:27:22 PM EEST (21:27)
 #
 # ==============================================================================
 
@@ -36,7 +36,7 @@ setup(
     packages=find_packages(exclude=("tests", "docs")),
     setup_requires=["pytest-runner"],
     tests_require=["pytest", "pytest-cov"],
-    extras_require={"dev": ["pytest", "pytest-cov", "ipdb"]},
+    extras_require={"dev": ["pytest", "pytest-cov", "ipdb", "psycopg2-binary"]},
     install_requires=["unidecode"],
     classifiers=[
         "Development Status :: 1 - Planning",

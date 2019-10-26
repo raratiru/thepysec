@@ -4,3 +4,4 @@ pytest - cov
 ipdb
 pdbpp
 black
+psycopg2-binary
