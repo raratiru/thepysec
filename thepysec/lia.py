@@ -26,11 +26,7 @@ def pop_i18n_wsp(instance, translated_fields):
     fields of a translated attribute (attribute_en, attribute_fr, attribute_el).
     """
     for field in translated_fields:
-        setattr(
-            instance,
-            field,
-            pop_wsp(getattr(instance, field)),
-        )
+        setattr(instance, field, pop_wsp(getattr(instance, field)))
 
 
 def fast_pre_slug(lia_string):
