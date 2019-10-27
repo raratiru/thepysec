@@ -4,4 +4,3 @@ ipdb
 pdbpp
 black
 psycopg2 - binary
-django
