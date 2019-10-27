@@ -36,9 +36,7 @@ setup(
     packages=find_packages(exclude=("tests", "docs")),
     setup_requires=["pytest-runner"],
     tests_require=["pytest", "pytest-cov", "psycopg2-binary"],
-    extras_require={
-        "dev": ["pytest", "pytest-cov", "ipdb", "psycopg2-binary"]
-    },
+    extras_require={"dev": ["pytest", "pytest-cov", "ipdb", "psycopg2-binary"]},
     install_requires=["unidecode"],
     classifiers=[
         "Development Status :: 1 - Planning",
