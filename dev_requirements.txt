@@ -1,6 +1,7 @@
 pytest
-pytest-cov
+pytest - cov
 ipdb
 pdbpp
 black
-psycopg2-binary
+psycopg2 - binary
+django

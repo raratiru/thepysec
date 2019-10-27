@@ -4,7 +4,7 @@
 
 # ==============================================================================
 #
-#       File Name : thepysec/lia/tests/test_strings.py
+#       File Name : thepysec/lia/tests/test_lia.py
 #
 #       Creation Date : Sat 16 Mar 2019 03:19:11 PM EET (15:19)
 #
@@ -12,11 +12,11 @@
 #
 # ==============================================================================
 
-from thepysec.lia import strings
+from thepysec import lia
 
 
 def test_pop_whitespace():
-    obj = strings.pop_wsp("dadd     d    r")
+    obj = lia.pop_wsp("dadd     d    r")
     assert obj == "dadd d r"
 
 
@@ -32,7 +32,7 @@ def test_django_pop_whitespace():
     obj = A()
     trans_fields = ("att1", "att2")
     langs = ("en", "fr", "el")
-    strings.pop_i18n_wsp(obj, trans_fields, langs)
+    lia.pop_i18n_wsp(obj, trans_fields, langs)
     assert all(
         (
             obj.att1_en == "f r a",
@@ -47,9 +47,9 @@ def test_django_pop_whitespace():
 
 def test_pre_slug():
     raw_slug = "tr4e, 5435 (bili#go)"
-    assert strings.pre_slug(raw_slug) == "tr 4 e 5435 bili go"
+    assert lia.pre_slug(raw_slug) == "tr 4 e 5435 bili go"
 
 
 def test_fast_pre_slug():
     raw_slug = "tr4e, 5435 (bili#go)"
-    assert strings.fast_pre_slug(raw_slug) == "tr 4 e 5 4 3 5 bili go"
+    assert lia.fast_pre_slug(raw_slug) == "tr 4 e 5 4 3 5 bili go"
