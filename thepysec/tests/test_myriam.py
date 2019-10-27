@@ -12,7 +12,7 @@
 #
 # ==============================================================================
 
-from thepysec.myriam import datetimes
+from thepysec import myriam
 from psycopg2.extras import DateTimeTZRange, DateRange
 from datetime import date, datetime
 
@@ -24,7 +24,7 @@ def test_datetime_false():
         DateTimeTZRange(datetime(2400, 2, 12, 15, 00), datetime(2400, 2, 20, 15, 00)),
         DateTimeTZRange(datetime(2400, 2, 10, 17, 00), datetime(2400, 2, 12, 15, 00)),
     ]
-    assert datetimes.validate_overlap(datetime_periods, datetime_range=True) is False
+    assert myriam.validate_overlap(datetime_periods, datetime_range=True) is False
 
 
 def test_datetime_true():
@@ -34,7 +34,7 @@ def test_datetime_true():
         DateTimeTZRange(datetime(2400, 2, 12, 15, 00), datetime(2400, 2, 20, 15, 00)),
         DateTimeTZRange(datetime(2400, 2, 10, 16, 59), datetime(2400, 2, 12, 15, 00)),
     ]
-    assert datetimes.validate_overlap(datetime_periods, datetime_range=True) is True
+    assert myriam.validate_overlap(datetime_periods, datetime_range=True) is True
 
 
 def test_date_false():
@@ -44,7 +44,7 @@ def test_date_false():
         DateRange(date(2400, 2, 12), date(2400, 2, 20)),
         DateRange(date(2400, 2, 11), date(2400, 2, 12)),
     ]
-    assert datetimes.validate_overlap(date_periods, datetime_range=False) is False
+    assert myriam.validate_overlap(date_periods, datetime_range=False) is False
 
 
 def test_date_true():
@@ -54,4 +54,4 @@ def test_date_true():
         DateRange(date(2400, 2, 12), date(2400, 2, 20)),
         DateRange(date(2400, 2, 11), date(2400, 2, 12)),
     ]
-    assert datetimes.validate_overlap(date_periods, datetime_range=False) is True
+    assert myriam.validate_overlap(date_periods, datetime_range=False) is True

@@ -8,7 +8,7 @@
 #
 #       Creation Date : Fri 28 Dec 2018 03:17:42 PM EET
 #
-#       Last Modified : Sat 26 Oct 2019 09:47:24 PM EEST (21:47)
+#       Last Modified : Sun 27 Oct 2019 01:55:23 PM EET (13:55)
 #
 # ==============================================================================
 
@@ -31,12 +31,14 @@ setup(
     long_description=read("README.md"),
     url="https://github.com/raratiru/thepysec",
     author="Raratiru",
-    author_email="welcome@rara.gr",
-    license="gpl-3.0",
+    author_email="info@musicaloffering.gr",
+    license="BSD 3-Clause License",
     packages=find_packages(exclude=("tests", "docs")),
     setup_requires=["pytest-runner"],
     tests_require=["pytest", "pytest-cov", "psycopg2-binary"],
-    extras_require={"dev": ["pytest", "pytest-cov", "ipdb", "psycopg2-binary"]},
+    extras_require={
+        "dev": ["pytest", "pytest-cov", "ipdb", "psycopg2-binary"]
+    },
     install_requires=["unidecode"],
     classifiers=[
         "Development Status :: 1 - Planning",
