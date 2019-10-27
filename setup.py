@@ -31,13 +31,13 @@ setup(
     long_description=read("README.md"),
     url="https://github.com/raratiru/thepysec",
     author="Raratiru",
-    author_email="welcome@rara.gr",
-    license="gpl-3.0",
+    author_email="info@musicaloffering.gr",
+    license="BSD 3-Clause License",
     packages=find_packages(exclude=("tests", "docs")),
     setup_requires=["pytest-runner"],
-    tests_require=["pytest", "pytest-cov", "psycopg2-binary", "django"],
+    tests_require=["pytest", "pytest-cov", "psycopg2-binary"],
     extras_require={
-        "dev": ["pytest", "pytest-cov", "ipdb", "psycopg2-binary", "django"]
+        "dev": ["pytest", "pytest-cov", "ipdb", "psycopg2-binary"]
     },
     install_requires=["unidecode"],
     classifiers=[
