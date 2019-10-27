@@ -8,7 +8,7 @@
 #
 #       Creation Date : Sat 16 Mar 2019 03:19:11 PM EET (15:19)
 #
-#       Last Modified : Sat 01 Jun 2019 01:12:24 PM EEST (13:12)
+#       Last Modified : Mon 28 Oct 2019 12:14:53 AM EET (00:14)
 #
 # ==============================================================================
 
@@ -30,9 +30,8 @@ def test_django_pop_whitespace():
         att2_el = "h     f       b   1         k"
 
     obj = A()
-    trans_fields = ("att1", "att2")
-    langs = ("en", "fr", "el")
-    lia.pop_i18n_wsp(obj, trans_fields, langs)
+    trans_fields = ("att1_en", "att1_el", "att1_fr", "att2_en", "att2_el", "att2_fr")
+    lia.pop_i18n_wsp(obj, trans_fields)
     assert all(
         (
             obj.att1_en == "f r a",
