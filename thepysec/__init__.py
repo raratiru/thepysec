@@ -8,13 +8,13 @@
 #
 #       Creation Date : Fri 28 Dec 2018 03:36:03 PM EET
 #
-#       Last Modified : Sat 26 Oct 2019 09:28:35 PM EEST (21:28)
+#       Last Modified : Mon 28 Oct 2019 12:18:14 AM EET (00:18)
 #
 # ==============================================================================
 
 from thepysec.john.version import get_version
 
 
-VERSION = (1, 1, 0, "alpha", 4)
+VERSION = (2, 0, 0, "final", 0)
 
 __version__ = get_version(VERSION)
