@@ -1,6 +1,6 @@
 pytest==5.2.2
 pytest - cov
-ipdb
+ipdb==0.12.2
 pdbpp
 black
 psycopg2 - binary
