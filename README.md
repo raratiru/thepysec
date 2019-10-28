@@ -2,7 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/raratiru/thepysec/badge.svg?branch=master&service=github)](https://coveralls.io/github/raratiru/thepysec?branch=master)
 
 
-A collection of tools that support a busy project based on Python >= 3.6.
+A collection of tools that support a busy project based on Python >= 3.5.
 
 John
 ----
