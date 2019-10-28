@@ -15,9 +15,15 @@ Lia
 Lia is here to take a detailed look at your strings.
 
 * `pop_wsp`: Remove extra whitespace.
-* `pop_i18n_wsp`: Remove extra whitespace from each field of django-translated-fields.
 * `pre_slug`: Prepare a string to become a wise slug. 'r33a!bc' -> 'r 33 abc'.
 * `fast_pre_slug`: Prepare a string to become a fast slug. 'r33a!bc' -> 'r 3 3 a bc'.
+
+Matina
+------
+
+Matina performs operations on django model instances
+
+* `pop_i18n_wsp`: Apply `pop_wsp` for a list of fields in a given model instance.
 
 Myriam
 ------

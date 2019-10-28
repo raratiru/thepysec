@@ -1,6 +1,7 @@
 dist: xenial
 language: python
 python:
+- '3.5'
 - '3.6'
 - '3.7'
 - '3.8'
@@ -13,13 +14,3 @@ script:
 - pytest
 after_success:
 - coveralls
-deploy:
-  provider: pypi
-  user: "raratiru"
-  password:
-    secure: "AGYeNOF6X4SrR5xAok8n76hbiVkekugS6wF6GtRq+0g7Dnob46SL7Aqsf4p2KGDTPPWG4MjiW/GF4mIyQ7IHDVhwGtlIJh2WKX0ggiQQ4oGMrDzMYj/ecv3LD3gJbfW3ozZ/bTDokoY8MTNAzVxN9X3/1HNAD0GYzjrqdtSwkGpD75lOvVc8uFgym7UfhRniid/ThajlWt7xjORY3VYrlpBsTDSF00/nf6RlvVakqofbiTojgmiG5NbK+LhYTgfxmcZLYJE1anVrdTiAe2wNNEPC3kSVEAoGPsr2LjRTEG8RDA7Ha3AyAeVOXtOWwgW1EPxpV7z5DSuF64daiGzodZbjfIO+rhYC3RhKs5pdicwliEozUBu7+SJx584ldkXkJVlscIlJ1tXT1I7VOURy9FaIhItf1e8QDNayQ+CWJNvzTXKZq6gZ1kjr8hSdTkSRq3JBjZT3o2/6hmUMjYuwVJhfv//dmoIoOfvzL/1xAiPgRzPQuKEsR0VMCeB3Ec3z0L3BngecqqeI4py9r4leQe3S0OTP6Lv9/iM/4Qoqo0v3qXDYQOU2riMaakm9G3K+92TLK41/H+XHBi+840FgZJBTjGR2rq5+4lfO9nQGMh8wCH9V/yG+/yaKNUdkb/DZ1MPihhVQ6ZU41XNZv4iREaJGctMQJub3/cD2vmgs5yQ="
-  skip_cleanup: true
-  skip_existing: true
-  distributions: "sdist bdist_wheel"
-  on:
-    tags: true

@@ -8,7 +8,7 @@
 #
 #       Creation Date : Fri 28 Dec 2018 03:17:42 PM EET
 #
-#       Last Modified : Sun 27 Oct 2019 01:55:23 PM EET (13:55)
+#       Last Modified : Mon 28 Oct 2019 06:49:18 PM EET (18:49)
 #
 # ==============================================================================
 
@@ -26,9 +26,10 @@ def read(fname):
 setup(
     name="thepysec",
     version=version,
-    python_requires=">=3.6",
+    python_requires=">=3.5",
     description="Python secretaries you call at will, for instant py-relief.",
     long_description=read("README.md"),
+    long_description_content_type="text/markdown",
     url="https://github.com/raratiru/thepysec",
     author="Raratiru",
     author_email="info@musicaloffering.gr",
@@ -41,6 +42,7 @@ setup(
     classifiers=[
         "Development Status :: 1 - Planning",
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
