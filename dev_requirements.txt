@@ -1,6 +1,6 @@
-pytest
-pytest - cov
-ipdb
-pdbpp
-black
-psycopg2 - binary
+pytest==5.2.2
+pytest-cov==2.8.1
+ipdb==0.12.2
+pdbpp==0.10.2
+black==19.3b0
+psycopg2-binary==2.8.4
