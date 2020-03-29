@@ -8,7 +8,7 @@
 #
 #       Creation Date : Sat 16 Mar 2019 03:12:18 PM EET (15:12)
 #
-#       Last Modified : Mon 28 Oct 2019 06:55:03 PM EET (18:55)
+#       Last Modified : Mon 30 Mar 2020 01:24:44 AM EEST (01:24)
 #
 # ==============================================================================
 
@@ -135,4 +135,19 @@ def pre_slug(s):
             r" \1 ",
             unidecode(s.translate(str.maketrans(punctuation)).lower()),
         ).split()
+    )
+
+
+def cap_sentence(s):
+    """
+    * Remove extra space
+    * Lower all letters if word.isupper() and len(word) > 3
+    * Capitalize the first letter of each word
+    """
+    sentence = " ".join(
+        [c.lower() if c.isupper() and len(c) > 3 else c for c in s.split()]
+    )
+    return "".join(
+        c.upper() if i == 0 or sentence[i - 1] == " " else c
+        for i, c in enumerate(sentence)
     )
