@@ -15,11 +15,12 @@ Lia
 Lia is here to take a detailed look at your strings.
 
 * `pop_wsp`: Remove extra whitespace.
-* `pre_slug`: Prepare a string to become a wise slug. 'r33a!bc' -> 'r 33 abc'.
-* `fast_pre_slug`: Prepare a string to become a fast slug. 'r33a!bc' -> 'r 3 3 a bc'.
+* `pre_slug`: Prepare a string to become a wise slug. 
+    * 'r33a!bc' -> 'r 33 abc'.
+* `fast_pre_slug`: Prepare a string to become a fast slug. 
+    * 'r33a!bc' -> 'r 3 3 a bc'.
 * `cap_sentence`: Carefully capitalize first letter and remove white space
-
-    "O'Connor is    INVITED to UK" -> "O'Connor Is Invited To UK"
+    * "O'Connor is    INVITED to UK" -> "O'Connor Is Invited To UK"
 
 Matina
 ------
