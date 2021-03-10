@@ -37,7 +37,6 @@ jobs:
         pytest
   release:
     runs-on: ubuntu-latest
-    if: ${{ github.event.issue.pull_request }}
     needs: build
     steps:
     - uses: codecov/codecov-action@v1
