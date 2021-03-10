@@ -45,4 +45,4 @@ jobs:
         python -m pip install coveralls
     - name: Run Coveralls
       run: |
-        coveralls
+        /home/runner/.local/bin/coveralls
