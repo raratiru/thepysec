@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/raratiru/thepysec.svg?branch=master)](https://travis-ci.org/raratiru/thepysec)
+[![Build Status](https://github.com/github/raratiru/thepysec/workflows/python-package.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/raratiru/thepysec/badge.svg?branch=master&service=github)](https://coveralls.io/github/raratiru/thepysec?branch=master)
 
 
