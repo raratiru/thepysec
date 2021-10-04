@@ -1,5 +1,5 @@
 pytest==6.2.5
-pytest-cov==2.12.1
+pytest-cov==3.0.0
 ipdb==0.13.9
 pdbpp==0.10.3
 black==21.8b0
