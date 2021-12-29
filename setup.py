@@ -1,17 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
-# ==============================================================================
-#
-#       File Name : setup.py
-#
-#       Creation Date : Fri 28 Dec 2018 03:17:42 PM EET
-#
-#       Last Modified : Mon 28 Oct 2019 06:49:18 PM EET (18:49)
-#
-# ==============================================================================
-
 from os import path
 from setuptools import setup, find_packages
 
@@ -26,7 +15,7 @@ def read(fname):
 setup(
     name="thepysec",
     version=version,
-    python_requires=">=3.5",
+    python_requires=">=3.6",
     description="Python secretaries you call at will, for instant py-relief.",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
@@ -42,10 +31,11 @@ setup(
     classifiers=[
         "Development Status :: 1 - Planning",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
         "Natural Language :: English",
