@@ -1,1 +1,1 @@
-unidecode==1.3.4
+unidecode==1.3.6
