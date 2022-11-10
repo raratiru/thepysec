@@ -14,12 +14,12 @@ Lia
 
 Lia is here to take a detailed look at your strings.
 
-* `pop_wsp`: Remove extra whitespace.
-* `pre_slug`: Prepare a string to become a wise slug.
+* [`pop_wsp`](https://github.com/raratiru/thepysec/blob/571cf49798e571f542c5ec65f45cf62ec5262399/thepysec/lia.py#L19): Remove extra whitespace.
+* [`pre_slug`](https://github.com/raratiru/thepysec/blob/571cf49798e571f542c5ec65f45cf62ec5262399/thepysec/lia.py#L87): Prepare a string to become a wise slug.
     * 'r33a!bc' -> 'r 33 abc'.
-* `fast_pre_slug`: Prepare a string to become a fast slug.
+* [`fast_pre_slug`](https://github.com/raratiru/thepysec/blob/571cf49798e571f542c5ec65f45cf62ec5262399/thepysec/lia.py#L23): Prepare a string to become a fast slug.
     * 'r33a!bc' -> 'r 3 3 a bc'.
-* `cap_sentence`: Carefully capitalize first letter and remove white space
+* [`cap_sentence`](https://github.com/raratiru/thepysec/blob/571cf49798e571f542c5ec65f45cf62ec5262399/thepysec/lia.py#L141): Carefully capitalize first letter and remove white space
     * "O'Connor is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INVITED to UK" -> "O'Connor Is Invited To UK"
 
 Matina
@@ -27,14 +27,14 @@ Matina
 
 Matina performs operations on django model instances
 
-* `pop_i18n_wsp`: Apply `pop_wsp` for a list of fields in a given model instance.
+* [`pop_i18n_wsp`](https://github.com/raratiru/thepysec/blob/571cf49798e571f542c5ec65f45cf62ec5262399/thepysec/matina.py#L18): Apply `pop_wsp` for a list of fields in a given model instance.
 
 Myriam
 ------
 
 Myriam a mathematical kind of jelly roll.
 
-* `validate_overlap`: Receives a list of DateRange or DateTimeRange and examines if contents overlap.
+* [`validate_overlap`](https://github.com/raratiru/thepysec/blob/571cf49798e571f542c5ec65f45cf62ec5262399/thepysec/myriam.py#L16): Receives a list of DateRange or DateTimeRange and examines if contents overlap.
 
 
 Thanos
@@ -42,7 +42,7 @@ Thanos
 
 Thanos is a Django test assistant
 
-* `get_formset_alive`: Receives a formset class with data dictionary and returns a formset instance.
+* [`get_formset_alive`](https://github.com/raratiru/thepysec/blob/571cf49798e571f542c5ec65f45cf62ec5262399/thepysec/thanos.py#L16): Receives a formset class with data dictionary and returns a formset instance.
 
 
 Otto
@@ -50,4 +50,4 @@ Otto
 
 A pythonista who slightly bends the borders of the language
 
-* `deep_getattr`: Dives in an object by performing successive getattrs for each word in a dotted string.
+* [`deep_getattr`](https://github.com/raratiru/thepysec/blob/571cf49798e571f542c5ec65f45cf62ec5262399/thepysec/otto.py#L8): Dives in an object by performing successive getattrs for each word in a dotted string.
