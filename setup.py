@@ -15,7 +15,7 @@ def read(fname):
 setup(
     name="thepysec",
     version=version,
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     description="Python secretaries you call at will, for instant py-relief.",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
@@ -31,11 +31,11 @@ setup(
     classifiers=[
         "Development Status :: 1 - Planning",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
         "Natural Language :: English",

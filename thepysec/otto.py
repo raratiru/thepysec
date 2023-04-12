@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
+from functools import reduce
 from typing import Any, Union
 
 
@@ -16,3 +17,15 @@ def deep_getattr(
     for each in string.split("."):
         current = getattr(current, each, default)
     return current
+
+
+def deep_get(dictionary: dict, keys: list, default=None):
+    """
+    Dives in a dictionary by performing successive gets for each word in a dotted string.
+    Returns default if the key does not exist.
+    """
+    return reduce(
+        lambda d, key: d.get(key, default) if isinstance(d, dict) else default,
+        keys.split("."),
+        dictionary,
+    )
