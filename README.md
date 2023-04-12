@@ -51,4 +51,4 @@ Otto
 A pythonista who slightly bends the borders of the language
 
 * [`deep_getattr`](https://github.com/raratiru/thepysec/blob/571cf49798e571f542c5ec65f45cf62ec5262399/thepysec/otto.py#L8): Dives in an object by performing successive getattrs for each word in a dotted string.
-* [`deep_get`](https://github.com/raratiru/thepysec/blob/571cf49798e571f542c5ec65f45cf62ec5262399/thepysec/otto.py#L8): Dives in a dictionary by performing successive getats for each word in a dotted string.
+* [`deep_get`](https://github.com/raratiru/thepysec/blob/4ee944291b832beeb75d6d22dd0a3bc045c108de/thepysec/otto.py#L22): Dives in a dictionary by performing successive getats for each word in a dotted string.
