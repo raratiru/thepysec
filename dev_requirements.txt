@@ -3,4 +3,4 @@ pytest-cov==4.1.0
 ipdb==0.13.13
 pdbpp==0.10.3
 black==23.9.1
-psycopg2-binary==2.9.7
+psycopg2-binary==2.9.9
