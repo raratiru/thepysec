@@ -4,7 +4,7 @@
 from os import path
 from setuptools import setup, find_packages
 
-version = __import__("thepysec").get_version()
+version = __import__("thepysec").__version__
 
 
 def read(fname):
